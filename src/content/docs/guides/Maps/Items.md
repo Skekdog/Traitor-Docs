@@ -5,8 +5,6 @@ title: Items
 ---
 Most maps will have items spawn around the map. To add an item to your map, place the item model somewhere in the `Dynamic` folder. Make sure to add the `Item` tag to the model. Note that items must have the correct name.
 
-See also: [`Classes.Item`](/Traitor-Docs/reference/classes/items/item), [`Gamemodes.CommonItemDefinition`](/Traitor-Docs/guides/gamemodes/items/commonitemdefinition)
-
 ## List of Standard Items
 
 - `Assault Rifle` (M4A1)

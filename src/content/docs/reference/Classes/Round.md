@@ -300,7 +300,6 @@ Returns the event log. Note, the event log does not store event data, but rather
 
 Adds a highlight to the round. Highlights are stored by group - if a highlight group already exists, it will be overwritten if the new highlight has a higher priority.
 
-See also: [`Types.Highlight`](/Traitor-Docs/reference/classes/types/highlight)
 
 #### Parameters
 
