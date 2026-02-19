@@ -2,7 +2,7 @@
 title: Commands
 ---
 
-See also: [Loading Your Map Or Gamemode](/Traitor-Docs/guides/loading-your-map-or-gamemode).
+See also: [Loading Your Map Or Gamemode](/Traitor-Docs/guides/loading-your-asset).
 
 When you are the host of a test place server (i.e, you were the first to join, or inherited it from the previous host), or are the host of a Labs server, you gain access to a console that can be used to run certain commands (Labs hosts have access to all commands). You can open the console using the `` ` `` (backtick) key by default.
 
