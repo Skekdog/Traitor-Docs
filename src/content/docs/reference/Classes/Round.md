@@ -96,7 +96,7 @@ Returns a dictionary of all `MapObjects` to loaded `Items`.
 
 #### Returns
 
-`{[MapObject]: AnyItem}`
+`{[MapObject]: Item}`
 
 ### GetItem
 
@@ -110,21 +110,36 @@ Returns the `Item` given the `MapObject`. Returns `nil` if the item is not loade
 
 #### Returns
 
-`AnyItem?`
+`Item?`
 
 ### LoadItem
 
-Loads an item given a MapObject. If the item is already loaded, returns the existing item.
+Creates a new Item and optionally associates it with a model.
 
 #### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `MapObject` | `MapObject` |  | The map object. |
+| `components` | `ItemComponents` | The components to use as a base. |
+| `mapObject` | `MapObject?` |  | The item model. |
 
 #### Returns
 
-`AnyItem`
+`Item`
+
+### LoadItemFromMapObject
+
+Creates a new Item from the given model. The model's name is used to determine what components to use. If no item with this name can be found, an error will be thrown.
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `mapObject` | `MapObject` |  | The item model. |
+
+#### Returns
+
+`Item`
 
 ### GetAmmoBoxes
 
@@ -147,44 +162,6 @@ Returns the `AmmoBox` given the `MapObject`. Returns `nil` if the ammo box is no
 #### Returns
 
 `AmmoBox?`
-
-### GetInteractables
-
-Returns a dictionary of all `MapObjects` to loaded `Interactables`.
-
-#### Returns
-
-`{[MapObject]: Interactable}`
-
-### GetInteractable
-
-Returns the `Interactable` given the `MapObject`. Returns `nil` if the interactable is not loaded.
-
-### AddInteractable
-
-Loads a defined interactable in the round. Returns the loaded interactable.
-
-#### Parameters
-
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `definition` | `InteractableDefinition` |  | The interactable definition. |
-| `MapObject` | `MapObject?` |  | The map object. Can be nil. |
-| `deferLoad` | `boolean?` | `false` | Whether to defer the server load hook of the interactable. No effect on the client load. |
-
-#### Returns
-
-`Interactable`
-
-#### Parameters
-
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `MapObject` | `MapObject` |  | The map object. |
-
-#### Returns
-
-`Interactable?`
 
 ### GetProps
 
