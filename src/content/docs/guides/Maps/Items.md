@@ -7,10 +7,10 @@ Most maps will have items spawn around the map. To add an item to your map, plac
 
 ## List of Standard Items
 
-- `Assault Rifle` (M4A1)
-- `Pistol` (Five-SeveN)
-- `Glock` (G18)
-- `SMG` (M11)
+- `M4A1`
+- `Five-SeveN`
+- `G18`
+- `M11`
 - `Scout`
 - `Deagle`
 - `XM1014`
@@ -29,6 +29,7 @@ Most maps will have items spawn around the map. To add an item to your map, plac
 - `Poltergeist`
 - `MelonLauncher`
 - `Spoon`
+- `Seal Gun`
 <br/>
 - `DNAScanner` (DNA Scanner)
 - `Defuser`
@@ -49,6 +50,7 @@ Most maps will have items spawn around the map. To add an item to your map, plac
 - `Golden Gone`
 - `Meloncholy`
 - `Flypack`
+- `Gatling Seal`
 
 # Ammo
 
@@ -56,8 +58,8 @@ If you have guns then you probably want ammo boxes too. To add an ammo box, plac
 
 ## List of Standard Ammo Boxes
 
-- `9mm` (Mil-Spec)
-- `Deagle` (High-Cal)
-- `SMG1` (Sub-Spec)
+- `Mil-Spec`
+- `High-Cal`
+- `Sub-Spec`
 - `Rifle`
 - `Shotgun`
