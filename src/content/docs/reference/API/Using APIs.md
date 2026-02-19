@@ -4,6 +4,12 @@ sidebar:
     order: 2
 ---
 
+# Types and Autocomplete
+
+To get type-checking and autocomplete for APIs, you should load the API Reference in the SDK plugin.
+
+# Using in Scripts
+
 The public APIs are designed to be easily accessible and usable no matter the context. To use an API, you can import it like so:
 
 ```lua
