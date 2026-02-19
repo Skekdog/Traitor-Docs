@@ -28,6 +28,18 @@ The `MapObject` of the prop.
 
 Additional data for the specific prop instance.
 
+### Interactable
+
+`Type: InteractableDefinition?`
+
+Defines the interactability of this prop.
+
+### HintTextClient
+
+`Type: string?`
+
+Text to display to players looking at this prop. This should be set on the client-side from the attached interactable.
+
 ### Round
 
 `Type: Round`

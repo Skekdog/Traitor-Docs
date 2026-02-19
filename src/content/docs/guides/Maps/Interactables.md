@@ -97,15 +97,15 @@ export type InteractableDefinition = {
     IsContinuousInteraction: boolean, -- If true, OnInteract will be called repeatedly until the player releases the interaction key or moves out of range.
     InteractionRange: number, -- The maximum distance at which the player can interact with the interactable.
 
-    OnInteractClient: ((object: Interactable) -> ())?, -- Called on the client when the player interacts with the interactable.
-    OnInteractServer: ((object: Interactable, participant: Participant) -> ())?, -- Called on the server when the participant interacts with the interactable.
+    OnInteractClient: ((object: Prop) -> ())?, -- Called on the client when the player interacts with the interactable.
+    OnInteractServer: ((object: Prop, participant: Participant) -> ())?, -- Called on the server when the participant interacts with the interactable.
 
-    OnLoadClient: ((object: Interactable) -> ())?, -- Called on the client when the interactable is first loaded in the map.
-    OnLoadServer: ((object: Interactable) -> ())?, -- Called on the server when the interactable is first loaded in the map.
+    OnLoadClient: ((object: Prop) -> ())?, -- Called on the client when the interactable is first loaded in the map.
+    OnLoadServer: ((object: Prop) -> ())?, -- Called on the server when the interactable is first loaded in the map.
 
-    OnBreakServer: ((object: Interactable, params: DamageParams) -> ())?, -- Called on the server when the interactable is destroyed.
+    OnBreakServer: ((object: Prop, params: DamageParams) -> ())?, -- Called on the server when the interactable is destroyed.
 
-    BeforeTakeDamage: ((object: Interactable, params: DamageParams) -> boolean)?, -- Called on the server before the interactable takes damage. If this returns false, the damage will not be applied.
+    BeforeTakeDamage: ((object: Prop, params: DamageParams) -> boolean)?, -- Called on the server before the interactable takes damage. If this returns false, the damage will not be applied.
 }
 ```
 
