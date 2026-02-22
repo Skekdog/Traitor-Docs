@@ -31,6 +31,12 @@ The damage source.
 
 If true, and the damage is fatal, the death will count as a headshot, meaning death screams will be muted and the corpse will display a headshot.
 
+### TimeOrigin
+
+`Type: number?`
+
+The time that this damage originated at, using `os.clock()`.
+
 ### Origin
 
 `Type: Vector3?`

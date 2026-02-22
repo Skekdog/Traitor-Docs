@@ -638,3 +638,39 @@ Called on the server whenever the item is unequipped. This includes the item bei
 | --- | --- | --- |
 | item | `Item` | The item. |
 | participant | `Participant` | The participant who unequipped the item. |
+
+### OnProjectileSpawn
+
+Called on the server when the item's projectile spawns. Currently only called for simulated projectiles.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| item | `Item` | The item. |
+| projectile | `MapObject` | The projectile. |
+| participant | `Participant` | The participant who unequipped the item. |
+
+### OnProjectileSpawn
+
+Called on the server when the item's projectile spawns. Currently only called for simulated projectiles.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| item | `Item` | The item. |
+| projectile | `MapObject` | The projectile. |
+| participant | `Participant` | The participant who spawned the projectile. |
+
+### OnProjectileDespawn
+
+Called on the server when the item's projectile despawns. Currently only called for simulated projectiles.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| item | `Item` | The item. |
+| projectile | `MapObject` | The projectile. |
+| participant | `Participant` | The participant who spawned the projectile. |

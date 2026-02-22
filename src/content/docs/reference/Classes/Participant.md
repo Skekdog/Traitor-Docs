@@ -652,6 +652,7 @@ Attempts to throw the specified assembly. Returns true if successful.
 | `position` | `Vector3?` | | The initial position of the assembly. |
 | `direction` | `Vector3?` | | The direction to throw the assembly. |
 | `noForward` | `boolean?` | | Whether to teleport the assembly slightly in-front of the participant. |
+| `noAngularImpulse` | `boolean?` | | If true, the throw assembly will not receive a random angular impulse.
 
 #### Returns
 

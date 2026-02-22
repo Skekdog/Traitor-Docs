@@ -51,6 +51,7 @@ Most maps will have items spawn around the map. To add an item to your map, plac
 - `Meloncholy`
 - `Flypack`
 - `Gatling Seal`
+- `Grow`
 
 # Ammo
 
