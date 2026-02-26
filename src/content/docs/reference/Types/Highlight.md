@@ -34,3 +34,15 @@ Highlights belong to groups - only one highlight from each group is shown when t
 `Type: number`
 
 Highlights with a higher priority are shown over highlights with a lower priority.
+
+### ScoreBonus
+
+`Type: number?`
+
+Awards score as a bonus to participants awarded this highlight.
+
+### Participants
+
+`Type: {Participant}?`
+
+The participants to award the highlight to.
