@@ -180,6 +180,42 @@ Called when the round runs out of time. Returns a `Victor` that will be declared
 
 `Victor`
 
+### UnloadGamemode
+
+:::note
+
+This function is optional. You may omit it if you wish.
+
+:::
+
+Called to allow the gamemode to clean-up after itself, if needed. This is only called if the gamemode is changed mid-round.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+
+### IsValidOnMap
+
+:::note
+
+This function is optional. You may omit it if you wish.
+
+:::
+
+If present, this function determines if this gamemode can be played on the given map. Can be used to prevent loading gamemodes that would not work well on certain maps, either checking their structure or by directly checking their name.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| map | `MapStructure` | The map. Note that this is a `MapStructure`, not `Map`. |
+
+#### Returns
+
+`boolean`
+
 ## Hooks
 
 Hooks are functions which are run on the server when a relevant event occurs. They are used to implement the gamemode's behaviors.
