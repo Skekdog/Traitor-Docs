@@ -274,9 +274,9 @@ Returns the participant's humanoid. Returns nil if the participant has no humano
 
 ### SpawnCharacter
 
-Spawns or respawns the participant's character. The character will spawn at a random PlayerSpawn in the map. This first calls `DespawnCharacter`.
+Spawns or respawns the participant's character. The character will spawn at a random PlayerSpawn in the map, unless a morph is specified. This first calls `DespawnCharacter`.
 
-Additionally, this method will reset the self-defense, slay votes, free kill status, and kill list of the participant.
+Additionally, this method will reset the self-defense, slay votes, free kill status, and kill list of the participant, unless `preserve` is true.
 
 :::note
 
@@ -284,19 +284,32 @@ Calls to this will silently fail if the participant's character is already in th
 
 :::
 
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `morph` | `Model?` | | A character model to use. |
+| `preserve` | `boolean?` |  | If true, participant data will not be reset. |
+
 #### Returns
 
 `()`
 
 ### DespawnCharacter
 
-Despawns the participant's character, additionally dropping their items and clearing their ammo. No effect if the participant has no character.
+Despawns the participant's character, additionally dropping their items and clearing their ammo, unless `preserve` is true. No effect if the participant has no character.
 
 :::caution
 
 Calls to this will silently fail if the participant's character is currently in the process of being spawned.
 
 :::
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `preserve` | `boolean?` |  | If true, participant data will not be reset. |
 
 #### Returns
 
