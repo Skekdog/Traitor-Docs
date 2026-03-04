@@ -20,37 +20,6 @@ Provides client functionality for item behaviour.
 
 ## Functions
 
-### GetRaycastDirection
-
-Gets the direction for a raycast, given a camera direction and spread value.
-
-#### Parameters
-
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `direction` | `Vector3` | | The initial camera direction. |
-| `spread` | `number` | | The spread value. |
-
-#### Returns
-
-`Vector3`
-
-### DeriveTargetPosition
-
-Determines the target position where a ray would land if it does not hit anything.
-
-#### Parameters
-
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `origin` | `Vector3` | | The origin. |
-| `direction` | `Vector3` | | The direction. |
-| `range` | `number` | | The range. |
-
-#### Returns
-
-`Vector3`
-
 ### DeductAmmo
 
 Decreases the ammo of the item by 1, updating UI.
@@ -71,53 +40,6 @@ Sets the last use timestamp for the item.
 | --- | --- | --- | --- |
 | `item` | `Item` | | The item. |
 | `action` | `"Primary" \| "Alternate"` | The action.
-
-### GetDefaultRaycastParams
-
-Returns the default RaycastParams that should be used for item raycasts.
-
-#### Parameters
-
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `character` | `Instance` | | The player's character. |
-
-#### Returns
-
-`RaycastParams`
-
-### GetOrigin
-
-Returns the origin to use for an action.
-
-#### Returns
-
-`Vector3`
-
-### GetDirection
-
-Returns the direction, without spread, to use for an action.
-
-#### Returns
-
-`Vector3`
-
-### Hitscan
-
-#### Parameters
-
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `params` | `RaycastParams` | | The RaycastParams to use. |
-| `origin` | `Vector3` | | The origin. |
-| `direction` | `Vector3` | | The direction, adjusted for spread. |
-| `range` | `number` | | The range. |
-| `checkInitialOverlap` | `boolean?` | | If true, the origin volume will be checked for hits. Typically used for melee weapons. |
-| `fallbackToBlockcast` | `boolean?` | | If true, a blockcast will be used if no hit is found by a raycast. Typically used for melee weapons. |
-
-#### Returns
-
-`BehaviourTypes.HitscanResult`
 
 ### MuzzleFlash
 
