@@ -131,8 +131,7 @@ Returns true if the target is not obscured by static geometry.
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `item` | `Item` | | The item. |
-| `participant` | `Participant` | | The participant who did the action. |
+| `map` | `Map` | | The current map. |
 | `origin` | `Vector3` | | The origin of the action. |
 | `destination` | `Vector3` | | The target position. |
 | `target` | `BasePart?` | | The target part. |
