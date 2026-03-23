@@ -265,7 +265,7 @@ Called when the round ends.
 
 ### OnCharacterAdded
 
-Called when a `Participant`'s character is loaded.
+Called when a `Participant`'s character is loaded. This is also called when the gamemode is swapped with some characters already spawned in.
 
 #### Parameters
 
@@ -273,6 +273,7 @@ Called when a `Participant`'s character is loaded.
 | --- | --- | --- |
 | round | `Round` | The current round. |
 | participant | `Participant` | The participant whose character was loaded. |
+| char | `Model` | The character. |
 
 ### OnDeath
 
@@ -357,3 +358,18 @@ Called before a `Prop` takes damage. This hook returns a `boolean`, which should
 #### Returns
 
 `boolean`
+
+## Schedules
+
+Schedules are run on the relevant `RunService` event whilst the gamemode is loaded.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The round. |
+| dt | `number` | The time delta. |
+
+### Available Schedules
+
+- `Heartbeat`

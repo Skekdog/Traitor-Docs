@@ -41,9 +41,9 @@ The color of the role. This is used to color the role in the UI.
 
 ### Sound
 
-`Type: string`
+`Type: Sound`
 
-The asset string (`rbxassetid://123`) for the sound that will play when this role is selected.
+The sound that plays for players when they receive this role.
 
 ### IsExclamatory
 
@@ -184,3 +184,18 @@ A list of roles that are automatically revealed to this role.
 `Type: {RoleName}?`
 
 A list of roles that are automatically highlighted for this role.
+
+## Hooks
+
+Hooks are called on (or before) a specific event occuring. All hooks are optional.
+
+### OnRoleAssignedServer
+
+Runs when a player receives this role.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| roleDefinition | `RoleDefinition` | The role. |
+| participant | `Participant` | The participant. |

@@ -3,9 +3,10 @@ sidebar:
   order: 8
 title: DamageSource
 ---
-The source of damage. Can be a string, or an item.
 
 ## GeneralDamageSource
+
+A non-specific source of damage.
 
 `Type: string`
 
@@ -19,14 +20,11 @@ The source of damage. Can be a string, or an item.
 - "Crush"
 - "Magic"
 - "Poison"
+- "Stomp"
 - "Other"
-
-## NamedDamageSource
-
-Can be a specific damage source, or any other string.
-
-`Type: string`
 
 ## DamageSource
 
-`Type: NamedDamageSource | AnyItem`
+Either a non-specific damage source or an item.
+
+`Type: GeneralDamageSource | Item`

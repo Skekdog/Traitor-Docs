@@ -26,6 +26,24 @@ The display name of the item. If not set, the `Name` is used instead.
 
 The description of the item, displayed in the shop.
 
+### CorpseInfoDescription
+
+`Type: string`
+
+The description shown on a body from a player with this item. Note that only passive items will show on a corpse, and only if `DoNotShowInEquipmentList` isn't true.
+
+The string can contain "%s" to substitute for the item display name with a determiner. For example, for the Jetpack:
+
+```
+They were wearing %s.
+```
+
+becomes:
+
+```
+They were wearing a Jetpack.
+```
+
 ### IconContent
 
 `Type: Content`

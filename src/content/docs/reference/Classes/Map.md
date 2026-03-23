@@ -41,7 +41,7 @@ The map authors.
 
 ### Icon
 
-`Type: string`
+`Type: Content`
 
 The map icon.
 
