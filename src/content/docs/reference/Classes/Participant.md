@@ -362,7 +362,7 @@ Sets the participant's last attacker for the specified duration. If the particip
 
 Adds the specified amount of score, for the specified reason, to the Participant. If a non-integer value is used, the amount will be rounded down.
 
-Throws an error if amount is NaN.
+Throws an error if amount is not finite (NaN or infinite).
 
 #### Parameters
 
