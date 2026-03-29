@@ -130,6 +130,8 @@ Returns the karma of the participant. Returns 1000 if karma is not enabled in th
 
 Sets the karma of the participant. No effect if karma is disabled in the current gamemode.
 
+Karma is clamped between 1 and 1000. If a non-integer value is specified, it will be rounded down. If a non-finite value (NaN or infinite) is used, an error will be thrown.
+
 #### Parameters
 
 | Name | Type | Default | Description |
