@@ -22,13 +22,13 @@ The PlaySound API is a versatile API for playing sounds. When called as a functi
 
 ### SoundId
 
-```lua
+```luau
 export type SoundId = number | Sound | string
 ```
 
 ### SoundProperties
 
-```lua
+```luau
 export type SoundProperties = {
 	Volume: number?,
 	RollOffMinDistance: number?,

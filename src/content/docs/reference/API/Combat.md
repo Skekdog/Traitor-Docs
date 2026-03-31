@@ -20,7 +20,7 @@ This API is a module. You should specify function names when using this API.
 
 ### `CombatAPIExplosionParams`
 
-```lua
+```luau
 export type CombatAPIExplosionParams = {
 	Position: Vector3,
 	Damage: number,

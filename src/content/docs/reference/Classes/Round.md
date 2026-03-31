@@ -7,7 +7,7 @@ The `round` represents the current state of the game. There is only ever one rou
 
 ## Types
 
-```lua
+```luau
 type VictoryData = {
 	Victor: Victor,
 	DidTimeout: boolean,

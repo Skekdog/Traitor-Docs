@@ -21,7 +21,7 @@ If your prop is breakable, you can have special behaviour for when it takes dama
 
 These modules should return a function which will run when the relevant event occurs. The function should have the following signature:
 
-```lua
+```luau
 OnBreak: function(prop: Types.Prop, params: Types.DamageParams): ()
 OnDamage: function(prop: Types.Prop, params: Types.DamageParams): boolean?
 ```
@@ -32,7 +32,7 @@ The returned boolean for `OnDamage` determines whether the prop should actually 
 
 There are a number of prefabs available for prop behaviour. You can use these by setting your OnBreak / OnDamage module to the following code:
 
-```lua
+```luau
 return require(game:GetService("ReplicatedStorage").Shared.MapPrefabs.PrefabName)
 ```
 
@@ -42,14 +42,14 @@ Currently only one prefab exists.
 
 :::note
 If you are coming from TT2, most map prefabs from there should also be available here. You should still use the TT2 path for the module require, so:
-```lua
+```luau
 return require(game:GetService("ReplicatedStorage").Assets.MapPrefabs.PrefabName)
 ```
 :::
 
 ### Examples
 
-```lua
+```luau
 --!strict
 -- Prop.OnBreak
 -- When this prop is broken, it will make the attacker a free kill if they are not evil (a Traitor).

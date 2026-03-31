@@ -67,7 +67,7 @@ Defined interactables are designed to be used in multiple places around a map, u
 To make a defined interactable, you should create a ModuleScript in your map. Give it an appropriate name (usually the name of the interactable, although it doesn't strictly matter).
 
 Now, you should require the module in your MapScript and add it to the InteractableDefinitions table:
-```lua
+```luau
 TerrainColors = ...,
 
 InteractableDefinitions = {
@@ -81,7 +81,7 @@ This will register all props with the Interactable tag and the matching name as 
 If you attempt to load your map now, it will break. You now need to define the interactable, so head back into your module and get coding!
 
 The module should return an `InteractableDefinition`:
-```lua
+```luau
 export type InteractableDefinition = {
     Name: string, -- This must match the name of the interactable in the map.
     DisplayName: string?, -- Overrides the name when displayed to players.
@@ -128,14 +128,14 @@ Runtime interactables currently cannot set a custom interaction range, it is alw
 :::
 
 The client `ModuleScript` **must** be named `ButtonClient`. It should return a table of the following type:
-```lua
+```luau
 export type ButtonClient = {
 	Began = () -> (),
 }
 ```
 
 The server `ModuleScript` **must** be named `ButtonServer`. It should return a table of the following type:
-```lua
+```luau
 export type ButtonServer = {
 	Began = (player: Player) -> (),
 }

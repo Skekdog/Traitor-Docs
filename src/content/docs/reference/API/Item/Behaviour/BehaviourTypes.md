@@ -22,7 +22,7 @@ Contains functions that check that a given object is of a request type. These ar
 
 ### HitscanResult
 
-```lua
+```luau
 export type HitscanResult = {
 	Hit: {
 		Part: BasePart,
@@ -35,7 +35,7 @@ export type HitscanResult = {
 
 ### Request
 
-```lua
+```luau
 export type Request = {HitscanResult}?
 ```
 

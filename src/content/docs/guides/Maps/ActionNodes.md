@@ -10,7 +10,7 @@ Action Nodes are special interactions that players with an `IsEvil` role can tri
 
 To create an action node, create a `Part` with a `Script` child. The script should have the following effect:
 
-```lua
+```luau
 --!strict
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")

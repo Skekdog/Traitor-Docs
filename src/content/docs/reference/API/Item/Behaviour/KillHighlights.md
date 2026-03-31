@@ -22,7 +22,7 @@ The KillHighlights API allow you to specify round highlights that should be awar
 
 ### ItemKillHighlight
 
-```lua
+```luau
 export type ItemKillHighlight = {
 	Title: string,
 	Description: string,
