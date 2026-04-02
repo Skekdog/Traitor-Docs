@@ -68,11 +68,11 @@ The number of credits this item costs to purchase. If `nil`, the item costs no c
 
 The maximum number of times a player can purchase this item in one round. If `nil`, there is no limit.
 
-### IsEvilItem
+### IsSuspicious
 
 `Type: boolean?`
 
-If `true`, this item will mark non-evil players as a free kill when held.
+If `true`, this item will mark players as a free kill if they are not allowed to perform suspicious actions (RoleDefinition.CanDoSuspiciousActions).
 
 ### Model
 

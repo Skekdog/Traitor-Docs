@@ -49,9 +49,7 @@ The sound that plays for players when they receive this role.
 
 `Type: boolean?`
 
-If true, mentions of this role will have an exclamation mark where appropriate. Additionally, the number of exclamatory roles is announced when the round begins. And also players assigned an exclamatory role will receive a list of their comrades when the round begins.
-
-Yes this property does a lot. I'll make it more granular in the future.
+If true, mentions of this role will have an exclamation mark where appropriate.
 
 ### PluralName
 
@@ -59,17 +57,41 @@ Yes this property does a lot. I'll make it more granular in the future.
 
 The plural form of the role name. If not set, the singular name will be used, with an "s" appended to the end.
 
+### ShouldAnnounceRoleCount
+
+`Type: boolean?`
+
+If true, the number of this role is announced to all players when the round starts.
+
+### ShouldRevealComradeList
+
+`Type: boolean?`
+
+If true, comrades will be revealed in a notification to one another when the round starts.
+
 ### IsEvil
 
 `Type: boolean?`
 
-If true, this role is evil. Gamemodes and maps often use this to determine whether a player should have be allowed to do certain actions.
+If true, this role is evil. Gamemodes and maps often use this to determine whether a player should be allowed to do certain actions.
 
 :::note
 
 This does **not** mean that a role is freely killable.
 
 :::
+
+### CanUseActionNodes
+
+`Type: boolean?`
+
+If true, this role can use action nodes.
+
+### CanDoSuspiciousActions
+
+`Type: boolean?`
+
+If true, this role is allowed to do suspicious actions. These are largely up to the discretion of maps / gamemodes, but notably this also determines whether holding a suspicious item will mark the player as a free kill or not.
 
 ### Allegiance
 
