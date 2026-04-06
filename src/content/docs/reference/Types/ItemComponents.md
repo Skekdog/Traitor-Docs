@@ -154,7 +154,7 @@ The amount of ammo currently available in the item. If `nil`, weapon presets wil
 
 `Type: number?`
 
-The time, in seconds, that it takes to reload the item. Weapon presets do not allow items to be used whilst they are reloading.
+The time, in seconds, that it takes to reload the item. Weapon presets do not allow items to be used whilst they are reloading. If UseShells is true, this sets the time it takes to insert a shell.
 
 ### UseShells
 
