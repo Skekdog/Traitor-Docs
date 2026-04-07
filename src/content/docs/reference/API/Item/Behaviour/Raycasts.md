@@ -58,7 +58,7 @@ Returns the default RaycastParams that should be used for item raycasts.
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `character` | `Instance` | | The player's character. |
+| `...ignore` | `...Instance` | | Instances to ignore. This is a var arg so you may specify multiple instances. |
 
 #### Returns
 

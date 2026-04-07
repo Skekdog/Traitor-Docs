@@ -20,6 +20,14 @@ Provides client functionality for item behaviour.
 
 ## Functions
 
+### GetViewmodelItem
+
+Returns the item instance in the viewmodel. Allows you to make changes to the viewmodel item model. May return nil in various circumstances.
+
+#### Returns
+
+`MapObject?`
+
 ### DeductAmmo
 
 Decreases the ammo of the item by 1, updating UI.
