@@ -65,6 +65,26 @@ Spawns a physics-simulated projectile.
 | `origin` | `Vector3` | | The origin for the projectile. |
 | `direction` | `Vector3` | | The direction of the projectile. |
 
+### DeductAmmo
+
+Decreases the ammo of the item by 1. Does not update the client.
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `item` | `Item` | | The item. |
+
+### ProcessReject
+
+Processes hit rejects for an item.
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `item` | `Item` | | The item. |
+
 ### ApplyNearMissSelfDefense
 
 Determines which players to apply near-miss self defense to, and applies it.
