@@ -210,7 +210,13 @@ The distance, in studs, before damage begins to drop-off.
 
 `Type: number?`
 
-The distance, in studs, before damage drops-off to 0.
+The distance, in studs, before damage drops-off to the specified FalloffMultiplier (0 if not specified).
+
+### FalloffMultiplier
+
+`Type: number?`
+
+The final multiplier to apply to the damage once FalloffEnd is reached.
 
 ### ImpulseForce
 
