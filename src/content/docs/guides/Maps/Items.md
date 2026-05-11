@@ -23,7 +23,6 @@ Most maps will have items spawn around the map. To add an item to your map, plac
 - `BAR`
 - `Knife`
 - `Silenced Pistol`
-- `Grenade`
 - `Flare Gun`
 - `Newton Launcher`
 - `Poltergeist`

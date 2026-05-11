@@ -64,6 +64,7 @@ Spawns a physics-simulated projectile.
 | `participant` | `Participant` | | The participant responsible for the hit. |
 | `origin` | `Vector3` | | The origin for the projectile. |
 | `direction` | `Vector3` | | The direction of the projectile. |
+| `cookTime` | `number?` | | The amount of time to subtract from the fuse time, if this is a fuse projectile. |
 
 ### DeductAmmo
 
