@@ -27,6 +27,7 @@ Creates a new set of item components that is set to act like an interactable ite
 | `allowPlant` | `boolean` | | If true, the item can be deployed by planting it on a wall. |
 | `onThrow` | `(interactable: Types.Prop, participant: Types.Participant) -> ()?` | | The function to run when the item is thrown. |
 | `onPlant` | `(interactable: Types.Prop, raycastResult: RaycastResult, weldConstraint: WeldConstraint, participant: Types.Participant) -> ()?` | | The function to run when the item is planted. |
+| `throwCount` | `number?` | 1 | The amount of items to spawn when throwing. Does not apply to planting. |
 
 #### Returns
 
