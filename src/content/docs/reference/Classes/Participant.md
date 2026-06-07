@@ -496,6 +496,7 @@ Removes the item from the participant's inventory.
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `item` | `AnyItem` |  | The item. |
+| `shouldRemoveFromRound` | `boolean?` | | If true, the item model will be destroyed and memory will be cleared. |
 
 #### Returns
 
