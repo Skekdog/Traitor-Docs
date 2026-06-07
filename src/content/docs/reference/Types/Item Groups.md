@@ -15,7 +15,7 @@ There are several types used to specify different groups of items.
 
 `Type: GunWeapon | GrenadeWeapon | MeleeWeapon`
 
-### AnyItem
+### Item
 
 `Type: Item | AnyWeapon`
 
@@ -25,7 +25,7 @@ There are several types used to specify different groups of items.
 
 ## Definitions
 
-### AnyItemDefinition
+### ItemDefinition
 
 `Type: ItemDefinition | GunWeaponDefinition | MeleeWeaponDefinition | GrenadeWeaponDefinition`
 

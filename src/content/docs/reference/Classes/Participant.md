@@ -419,7 +419,7 @@ Returns the participant's currently equipped item. Returns nil if the participan
 
 #### Returns
 
-`AnyItem?`
+`Item?`
 
 ### SetEquippedItem
 
@@ -429,7 +429,7 @@ Attempt to set the participant's currently equipped item.
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `item` | `AnyItem` |  | The item. |
+| `item` | `Item` |  | The item. |
 | `force` | `boolean?` |  | Whether to force set the item, bypassing prevent unequip if the currently equipped item has it. |
 
 #### Returns
@@ -442,7 +442,7 @@ Returns a table of the item name to the item, for all items in the participant's
 
 #### Returns
 
-`{[string]: AnyItem}`
+`{[string]: Item}`
 
 ### GiveItemFromItemDefinition
 
@@ -466,7 +466,7 @@ Attempts to drop the specified item. Will fail if the item cannot be dropped.
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `item` | `AnyItem` |  | The item. |
+| `item` | `Item` |  | The item. |
 | `throwDirection` | `Vector3?` |  | The direction to throw the item. |
 
 #### Returns
@@ -481,7 +481,7 @@ Adds the item to the participant's inventory. Will error if the slot is already 
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `item` | `AnyItem` |  | The item. |
+| `item` | `Item` |  | The item. |
 
 #### Returns
 
@@ -495,7 +495,7 @@ Removes the item from the participant's inventory.
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `item` | `AnyItem` |  | The item. |
+| `item` | `Item` |  | The item. |
 | `shouldRemoveFromRound` | `boolean?` | | If true, the item model will be destroyed and memory will be cleared. |
 
 #### Returns
@@ -510,7 +510,7 @@ Attempts to drop the specified item. If unsuccessful, removes the item instead. 
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `item` | `AnyItem` |  | The item. |
+| `item` | `Item` |  | The item. |
 | `throw` | `boolean?` |  | Whether to apply a throwing force or not. |
 
 #### Returns
@@ -519,7 +519,7 @@ Attempts to drop the specified item. If unsuccessful, removes the item instead. 
 
 ### GetItemOccupyingGroup
 
-Returns `AnyItem` occupying the specified group. Returns nil if the group is empty.
+Returns `Item` occupying the specified group. Returns nil if the group is empty.
 
 #### Parameters
 
@@ -529,7 +529,7 @@ Returns `AnyItem` occupying the specified group. Returns nil if the group is emp
 
 #### Returns
 
-`AnyItem?`
+`Item?`
 
 ### GetAmmo
 

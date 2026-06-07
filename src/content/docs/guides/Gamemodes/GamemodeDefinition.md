@@ -57,7 +57,7 @@ If true, karma will be active and will reduce damage dealt by players with low k
 
 ### AvailableItems
 
-`Type: {[string]: AnyItemDefinition}`
+`Type: {[string]: ItemDefinition}`
 
 A dictionary specifiying all available items in the gamemode. If an item is not specified here (or in the loaded map), it will fail to load.
 
@@ -93,7 +93,7 @@ You can get all standard interactables by using the `API.StandardInteractables.G
 
 ### StartingItems
 
-`Type: {AnyItemDefinition}`
+`Type: {ItemDefinition}`
 
 A list of items to give players when they spawn.
 
@@ -314,7 +314,7 @@ Called when a `Participant` equips / unequips an item.
 | --- | --- | --- |
 | round | `Round` | The current round. |
 | participant | `Participant` | The participant that equipped / unequipped the item. |
-| item | `AnyItem` | The item that was equipped / unequipped. |
+| item | `Item` | The item that was equipped / unequipped. |
 | equipped | `boolean` | Whether the item was equipped or unequipped. |
 
 ### AddFinishHighlights

@@ -42,7 +42,7 @@ Returns the item definition given the name of the item. When an maps and gamemod
 
 #### Returns
 
-`AnyItemDefinition?`
+`ItemDefinition?`
 
 ### GetAmmoDefinition
 
