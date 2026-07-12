@@ -101,7 +101,7 @@ The allegiance of the role. This determines who is considered the winner when th
 
 ### StartingItems
 
-`Type: {AnyItemDefinition}?`
+`Type: {ItemDefinition}?`
 
 A list of items that this role starts with.
 
@@ -113,7 +113,7 @@ The number of credits that this role starts with. This is added on to their curr
 
 ### EquipmentShop
 
-`Type: {AnyItemDefinition}?`
+`Type: {ItemDefinition}?`
 
 A list of items that this role can buy from the equipment shop.
 

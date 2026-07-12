@@ -52,16 +52,16 @@ To set a property to `nil`, you should use a table, like so: `{__nil = true}`.
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `original` | `T where T = AnyItemDefinition \| AmmoDefinition \| InteractableDefinition` | | The original definition. |
+| `original` | `T where T = ItemDefinition \| AmmoDefinition \| InteractableDefinition` | | The original definition. |
 | `modifications` | `{[PropertyName]: PropertyValue}` | | The modifications to apply. |
 
 #### Returns
 
-`T where T = AnyItemDefinition | AmmoDefinition | InteractableDefinition`
+`T where T = ItemDefinition | AmmoDefinition | InteractableDefinition`
 
 ### GetItem
 
-Gets the specified `AnyItemDefinition`. Will error if the item is not found.
+Gets the specified `ItemDefinition`. Will error if the item is not found.
 
 #### Parameters
 
@@ -71,15 +71,15 @@ Gets the specified `AnyItemDefinition`. Will error if the item is not found.
 
 #### Returns
 
-`AnyItemDefinition`
+`ItemDefinition`
 
 ### GetItems
 
-Gets all `AnyItemDefinition` objects.
+Gets all `ItemDefinition` objects.
 
 #### Returns
 
-`{[string]: AnyItemDefinition}`
+`{[string]: ItemDefinition}`
 
 ### GetAmmo
 
