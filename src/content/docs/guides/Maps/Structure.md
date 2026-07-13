@@ -24,11 +24,22 @@ Static geometry should be placed in the Static folder. This folder will be loade
 
 The PlayerSpawns folder should contain parts positioned where you want players to spawn at. These parts are made invisible when the map loads.
 
-Maps also must have certain attributes on the root folder:
+Maps must also contain a Metadata module. This must be a ModuleScript containing the following:
 
-| Attribute | Type | Description |
-| --- | --- | --- |
-| `Authors` | string | The map creators. Usually, users are referenced by their username, prefixed by an "@". |
-| `Icon` | string | The map's icon shown in voting. This should be an asset string, in the form `rbxassetid://ID`. |
-| `Description` | string | The map's description. This is not currently shown anywhere, but it may be used in the future. |
-| `DisplayName` | string? | The map's display name. This is shown in voting. If not specified, the root folder name will be used. |
+```lua
+--!strict
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Types = require(ReplicatedStorage.API.Types)
+
+local metadata: Types.MapMetadata = {
+	DisplayName = nil,
+	Description = "DESCRIPTION",
+	Authors = "AUTHORS",
+	Icon = Content.none,
+}
+
+return metadata
+```
+
+You may replace each property as you see fit. To set a custom icon for your map, use `Content.fromAssetId(ICON_ASSET_ID_HERE)`.
