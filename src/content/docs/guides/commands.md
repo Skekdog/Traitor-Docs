@@ -47,7 +47,11 @@ Using the starting characters of a player name will return all players matching 
 If your parameter needs to include a space, you should replace spaces with dashes. So, for example:
 
 ```bash
-giveitem Seal-Gun
+give Seal-Gun
 ```
 
-If your parameter needs to include a dash, you should make it not need a dash. Why would you add a dash in the name. Use the display name.
+If your parameter needs to include a dash, you can use `--` to escape a single dash. Escaping multiple dashes is not possible at this time.
+
+```bash
+give Five--Seven
+```
