@@ -73,6 +73,12 @@ A table of scores for this participant.
 
 A table of items that this participant has purchased, to the number of times they have done so.
 
+### CharacterCollisionGroup
+
+`Type: string`
+
+The character's collision group. If you need to update the collision group for the current character, use `Participant:SetCharacterCollisionGroup`.
+
 ## Methods
 
 ### TryAddSlayVote
@@ -675,3 +681,13 @@ Attempts to throw the specified assembly. Returns true if successful.
 #### Returns
 
 `boolean`
+
+### SetCharacterCollisionGroup
+
+Sets the new character collision group, and updates the existing character to use this new collision group. This should be used over directly setting `Participant.CharacterCollisionGroup` if updating the current character is desired.
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `collisionGroup` | `string` |  | The new collision group. |
