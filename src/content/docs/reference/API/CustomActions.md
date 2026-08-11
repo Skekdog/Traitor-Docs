@@ -50,3 +50,13 @@ Unregisters a custom action. Does nothing if the action is not already registere
 #### Returns
 
 `()`
+
+### Trigger
+
+Triggers a custom action with the specified name. Errors if the action isn't registered.
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| name | `string` | | The name of the action. |
