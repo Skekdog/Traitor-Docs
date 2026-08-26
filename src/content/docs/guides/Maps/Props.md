@@ -38,7 +38,7 @@ return require(game:GetService("ReplicatedStorage").Shared.MapPrefabs.PrefabName
 
 Prefabs:<br/>
 Currently only one prefab exists.
-- `Window` - Shatter the window when it is destroyed.
+- `Window` - Shatter the window when it is destroyed. Setting a `ShatterScale` attribute can multiply the number of fragments generated.
 
 :::note
 If you are coming from TT2, most map prefabs from there should also be available here. You should still use the TT2 path for the module require, so:
