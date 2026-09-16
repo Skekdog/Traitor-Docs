@@ -19,4 +19,6 @@ To load a gamemode, use: `gamemode AssetId`<br/>
 To load a boss, use: `boss AssetId`<br/>
 To see other commands, use the command: `help`
 
+Additionally, you can add `perm` to the end of your command to make the map or gamemode permanently loaded: `map AssetId perm`
+
 Now if everything has gone well, you will be able to play your map or gamemode!
