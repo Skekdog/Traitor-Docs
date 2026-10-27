@@ -14,9 +14,9 @@
     "@astrojs/starlight": "0.42.7",
     "astro": "7.4.2",
     "sharp": "^0.34.2",
-    "starlight-links-validator": "^0.19.2",
-    "typescript": "^5.9.3",
-    "zod": "^3.25.76"
+    "starlight-links-validator": "^0.27.0",
+    "typescript": "^7.0.2",
+    "zod": "^4.6.7"
   },
   "browserslist": {
     "production": [
