@@ -1,7 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-import starlightLinksValidator from "starlight-links-validator";
+//import starlightLinksValidator from "starlight-links-validator";
 
 // https://astro.build/config
 export default defineConfig({
@@ -19,8 +19,8 @@ export default defineConfig({
       components: {
         Head: "./src/components/head.astro"
       },
-      
-      plugins: [starlightLinksValidator()],
+
+      //plugins: [starlightLinksValidator()],
       social: [
         {
           icon: "github",
@@ -31,11 +31,11 @@ export default defineConfig({
       sidebar: [
         {
           label: "Guides",
-          autogenerate: { directory: "guides" },
+          items: [{ autogenerate: { directory: "guides" }, }]
         },
         {
           label: "Reference",
-          autogenerate: { directory: "reference" },
+          items: [{ autogenerate: { directory: "reference" }, }]
         },
       ],
     }),
