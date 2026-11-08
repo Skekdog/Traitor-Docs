@@ -19,8 +19,10 @@ Command parameters are case-sensitive.
 Commands are run in the format:
 
 ```
-command parameter1 parameter2; command2 parameter1 parameter2...
+command parameter1 parameter2 "multi-word parameter"; command2 parameter1 "escaped quote \" and backslash \\"...
 ```
+
+Multi-word arguments can be specified by wrapping the argument in quotes (`"`). Quotes and backslashes can be escaped using a backlash (`\`).
 
 Multiple commands can be run sequentially by separating them with semi-colons. Note that client-side commands will always be run before server-side commands, so the following input:
 
@@ -43,15 +45,3 @@ Where a parameter is a player, you can use the following:
 Using the starting characters of a player name will return all players matching those characters, not just the first closest match.
 
 :::
-
-If your parameter needs to include a space, you should replace spaces with dashes. So, for example:
-
-```bash
-give Seal-Gun
-```
-
-If your parameter needs to include a dash, you can use `--` to escape a single dash. Escaping multiple dashes is not possible at this time.
-
-```bash
-give Five--Seven
-```
